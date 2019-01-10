@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网易账号中心</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/emailReg.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<h2></h2>
+			<div class="header_right">
+				<span href="#">已有账号？去</span>
+				<a href="index.html">登录</a>
+			</div>
+		</div>
+		<!--主体区域-->
+		<div class="main_info">
+			<form action="php/register.php" method="post">
+			<div class="m_tab">
+				<h2 class="left_select">普通账号注册</h2>
+				<a href="#">靓号注册<p>new</p></a>
+			</div>
+			<div class="u-input" id="me_input">
+				<lable class="u-label">帐号：</lable>
+				<input type="text" placeholder="网易邮箱/其他邮箱" class="i-inpt" id="txt_inp" autocomplete="off" name="email"/>
+					<ul class="fixed-check">
+						<li id="ck_kong"><img src="images/erro.png"/><span class="fix-ck-sp2">请先输入账号</span></li>
+						<li id="ng_gth">邮箱号码不对，请重新输入！</li>
+						<li id="ck_name">	帐号请用字母、数字或下划线命名</li>
+						<li id="succ">可用</li>
+					</ul>
+					<ol id="all_email" class="all_email">
+						<li><span class="emailText"></span>@qq.com</li>
+						<li><span class="emailText"></span>@163.com</li>
+						<li><span class="emailText"></span>@souhu.com</li>
+						<li><span class="emailText"></span>@sina.com.cn</li>
+						<li><span class="emailText"></span>@gmail.com</li>
+						<li><span class="emailText"></span>@yahoo.com.cn</li>
+						<li><span class="emailText"></span>@yeah.net</li>
+					</ol>
+			</div>
+			<div class="u-input">
+				<lable class="u-label">密码：</lable>
+				<input type="password" placeholder="6-16位密码，区分大小写" class="i-inpt" id="pwd" name="pwd"/>
+				<ul class="fixed-check2">
+					<li id="m_zc">	密码须由6-16个字符组成，区分大小写</li>
+					<li id="m_eacy">	密码过于简单，请重新设置(最好包含字母)</li>
+					<li id="succ2" style="padding-left: 12px; color: green; display: none; font-weight: 900;">可用</li>
+					<li id="pwd_k" style="padding-left: 12px; color: red; display: none;">请先输入密码！</li>
+				</ul>
+			</div>
+			<div class="u-input">
+				<lable class="u-label">确认密码：</lable>
+				<input type="password" placeholder="再次输入密码" class="i-inpt" id="inp_pwd" name="pwd"/>
+				<ul class="fixed-check3">
+					<li id="m_const">	密码须由6-16个字符组成，区分大小写</li>
+					<li id="m_diff">	密码不一致</li>
+					<li id="succ3" style="padding-left: 12px; color: green; display: none; font-weight: 900;">可用</li>
+					<li id="pwd_k2" style="padding-left: 12px; color: red; display: none;">请先输入密码！</li>
+				</ul>
+			</div>
+			<div class="u-input" style="height: 40px; overflow: hidden;">
+				<lable class="b_label">验证码：</lable>
+				<div class="yidun_control">
+					<span id="show_t">请依次点击"豆"祝""剑"</span><span style="cursor: pointer;" id="hide_t">点此进行验证</span>
+				</div>
+			</div>
+			<div id="posi_img"><img src="images/yzm.jpg"/></div>		
+			<div class="u-input">
+				<lable class="u-label">手机号：</lable>
+				<input type="text" placeholder="11位手机号" class="i-inpt" id="phone_txt" name="phone"/>
+				<ul class="fixed-check4">
+					<li id="phone_err">手机号输入有误，请重新输入</li>
+					<li id="succ4" style="padding-left: 12px; color: green; display: none; font-weight: 900;">可用</li>
+				</ul>
+			</div>
+			<div class="u-note"><lable class="u-label n-lable"></lable><a class="j_phone">切换到国际手机</a></div>
+			<div class="u-note"><lable class="u-label n-lable"></lable><a class="j_phone" style="color: #999999;">忘记密码时，可通过手机快速找回密码</a></div>
+			
+			<div class="u-input">
+				<lable class="u-label">短信验证码：</lable>
+				<input type="text" class="i-inpt smsize" placeholder="输入短信验证码" /> 
+				<span class="hu_num">获取验证码</span>
+			</div>
+			<div class="u-input" style="height: 58px;">
+				<lable class="u-label"></lable>
+				<input type="submit" value="注册" class="b-btn" id="b_btn"/>
+			</div>
+			<div class="u-input">
+				<lable class="u-label"></lable>
+				<span class="tip">
+					<input type="checkbox" />
+					<span>用户勾选即代表同意《网易邮箱服务条款》和《网易隐私政策》</span>
+				</span>
+			</div>
+			<a href="#" class="a-gg"><img src="childImg/gg.png"/></a>
+			</form>
+		</div>
+		<div class="m-cp">
+			<p>
+				<a href="#">About</a>
+				<a href="#">NetEase</a>-
+				<a href="#">公司简介</a>-
+				<a href="#">联系方式</a>-
+				<a href="#">OAuth2</a>-
+				<a href="#">.0认证</a>-
+				<a href="#">招聘信息</a>-
+				<a href="#">客户服务</a>-
+				<a href="#">相关法律</a>-
+				<a href="#">网络营销</a>
+			</p>
+			<p style="color: #b1b1b1;">网易公司版权所有 ©1997-2018</p>
+		</div>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/emailReg.js"></script>
+	<script src="js/ajax完整封装.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("form").submit(function(){
+				$.ajax({
+					type:"post",
+					url:"php/register.php",
+					async:true,
+					success:function(res){
+						//0 为用户名存在 1为插入数据成功 2 插入数据失败
+					},
+					error:function(err){
+						
+					}
+				});
+				
+			})
+			
+			
+			
+		})
+	
+		
+	</script>
+	</body>
+</html>

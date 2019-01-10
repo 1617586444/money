@@ -1,0 +1,5 @@
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=101330628&redirect_uri=https%3A%2F%2Freg.163.com%2FouterLogin%2Foauth2%2Ftencent_connect.do%3Furl%3Dhttp%253A%252F%252Fyou.163.com%252Fhtmld%252FthirdLogin.html%26url2%3Dhttp%253A%252F%252Fyou.163.com%252Fhtmld%252FthirdLogin.html%26product%3Dyanxuan_web%26urs_tg%3D1&response_type=code&state=6e35fe&scope=get_user_info
